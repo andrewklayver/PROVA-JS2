@@ -7,9 +7,12 @@ let Alunos = [
 
 for(var i = 0; i < Alunos.length; i++){
    if(Alunos[i].MEDIA >= 7){
-    console.log(`${Alunos[i].ID} - ${Alunos[i].NOME}: Parabéns, você foi aprovade`);
+    console.log(`${Alunos[i].id} - ${Alunos[i].NOME}: Parabéns, você foi aprovado(a)`);
+   }
+   if(Alunos[i].MEDIA >= 10){
+    console.log(`${Alunos[i].id} - ${Alunos[i].NOME}: Parabéns, você está com 10 na média.`);
    }
    else{
-    console.log(`${Alunos[i].ID} - ${Alunos[i].NOME}: REPROVADE, MUITO BURRE`);
+    console.log(`${Alunos[i].id} - ${Alunos[i].NOME}: REPROVADO(a), MUITO BURRO(a)`);
    };
 };
